@@ -15,9 +15,10 @@ from dotenv import load_dotenv
 import os
 # Load environment variables from .env file
 load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Set OpenAI API key from environment variable
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+# os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 # Check if the API key is set
 if os.environ["OPENAI_API_KEY"] is None:
